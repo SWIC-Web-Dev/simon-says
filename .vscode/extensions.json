@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "davidanson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "htmlhint.vscode-htmlhint",
+    "ms-vsliveshare.vsliveshare",
+    "pkief.material-icon-theme",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "vitest.explorer",
+    "vivaxy.vscode-conventional-commits"
+  ]
+}
