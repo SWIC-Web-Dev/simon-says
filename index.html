@@ -10,32 +10,24 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body class="bg-slate-900 text-white">
-    <h1
-      class="mt-4 text-center text-4xl font-black uppercase sm:text-5xl md:text-6xl lg:text-7xl"
-    >
-      Simon Says
-    </h1>
-
+  <body
+    class="flex min-h-screen flex-col items-center justify-center gap-y-16 bg-slate-900 text-white"
+  >
     <main
-      class="motion-duration-500 mt-16 flex min-h-screen flex-col items-center gap-y-24"
+      class="*:motion-scale-in-75 *:motion-translate-y-in-100 *:motion-rotate-in-90 *:motion-preset-fade motion-duration-500 flex gap-x-16 *:size-64 *:rounded-xl *:focus:outline-none"
     >
-      <button
-        class="rounded-lg bg-slate-100 px-16 py-8 text-2xl text-black transition-transform hover:-translate-y-2 hover:scale-105 hover:rounded-xl sm:text-3xl md:text-4xl lg:text-5xl"
-      >
-        Start
-      </button>
-
-      <div
-        class="*:motion-scale-in-75 *:motion-translate-y-in-100 *:motion-rotate-in-90 *:motion-preset-fade flex items-center justify-center gap-x-16 *:size-64 *:rounded-xl *:focus:outline-none"
-        id="game"
-      >
-        <button class="bg-red-500"></button>
-        <button class="motion-delay-150 bg-blue-500"></button>
-        <button class="motion-delay-300 bg-green-500"></button>
-        <button class="motion-delay-500 bg-yellow-500"></button>
-      </div>
+      <button class="bg-red-500"></button>
+      <button class="motion-delay-150 bg-blue-500"></button>
+      <button class="motion-delay-300 bg-green-500"></button>
+      <button class="motion-delay-500 bg-yellow-500"></button>
     </main>
+
+    <footer class="flex flex-col gap-y-8 text-2xl font-extrabold">
+      <p class="text-center">Score: <span id="score">0</span></p>
+      <button class="rounded-sm bg-slate-100 px-8 py-4 text-lg text-black">
+        Restart Game
+      </button>
+    </footer>
 
     <script type="module" src="./src/main.js"></script>
   </body>
