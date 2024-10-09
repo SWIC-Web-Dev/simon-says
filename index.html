@@ -22,9 +22,14 @@
       <button class="motion-delay-500 bg-yellow-500"></button>
     </main>
 
-    <footer class="flex flex-col gap-y-8 text-2xl font-extrabold">
-      <p class="text-center">Score: <span id="score">0</span></p>
-      <button class="rounded-sm bg-slate-100 px-8 py-4 text-lg text-black">
+    <footer
+      class="flex flex-col gap-y-8 text-2xl font-extrabold [&>p]:text-center"
+    >
+      <p>Score: <span id="score">0</span></p>
+      <p class="invisible uppercase text-red-400" id="game-over">Game over</p>
+      <button
+        class="rounded-sm bg-slate-100 px-8 py-4 text-lg text-black hover:bg-slate-300"
+      >
         Restart Game
       </button>
     </footer>
