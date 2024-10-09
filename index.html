@@ -5,19 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- TODO: Update this! -->
-    <title>Vite App</title>
+    <title>Simon Says</title>
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <!-- TODO: Do what must be done! -->
-  <body class="flex min-h-screen items-center justify-center">
+  <body class="bg-slate-900 text-white">
     <h1
-      class="m-4 text-2xl font-extrabold text-indigo-500 sm:text-3xl md:text-4xl lg:text-5xl"
+      class="mt-4 text-center text-4xl font-black uppercase sm:text-5xl md:text-6xl lg:text-7xl"
     >
-      Hello Vite!
+      Simon Says
     </h1>
+
+    <main
+      class="motion-duration-500 mt-16 flex min-h-screen flex-col items-center gap-y-24"
+    >
+      <button
+        class="rounded-lg bg-slate-100 px-16 py-8 text-2xl text-black transition-transform hover:-translate-y-2 hover:scale-105 hover:rounded-xl sm:text-3xl md:text-4xl lg:text-5xl"
+      >
+        Start
+      </button>
+
+      <div
+        class="*:motion-scale-in-75 *:motion-translate-y-in-100 *:motion-rotate-in-90 *:motion-preset-fade flex items-center justify-center gap-x-16 *:size-64 *:rounded-xl *:focus:outline-none"
+        id="game"
+      >
+        <button class="bg-red-500"></button>
+        <button class="motion-delay-150 bg-blue-500"></button>
+        <button class="motion-delay-300 bg-green-500"></button>
+        <button class="motion-delay-500 bg-yellow-500"></button>
+      </div>
+    </main>
 
     <script type="module" src="./src/main.js"></script>
   </body>
