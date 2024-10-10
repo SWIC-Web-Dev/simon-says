@@ -11,19 +11,19 @@
   </head>
 
   <body
-    class="flex min-h-screen flex-col items-center justify-center gap-y-16 bg-slate-900 text-white"
+    class="my-8 flex min-h-screen flex-col items-center justify-center gap-y-4 bg-slate-900 text-white md:gap-y-8 lg:gap-y-16"
   >
     <main
-      class="*:motion-scale-in-75 *:motion-translate-y-in-100 *:motion-rotate-in-90 *:motion-preset-fade motion-duration-500 flex gap-x-16 *:size-64 *:rounded-xl *:focus:outline-none"
+      class="my-8 grid grid-cols-2 place-content-center gap-8 motion-duration-500 *:motion-preset-fade *:size-36 *:rounded-xl *:motion-scale-in-75 *:motion-translate-y-in-100 *:motion-rotate-in-90 *:focus:outline-none lg:*:size-48"
     >
       <button class="bg-red-500"></button>
-      <button class="motion-delay-150 bg-blue-500"></button>
-      <button class="motion-delay-300 bg-green-500"></button>
-      <button class="motion-delay-500 bg-yellow-500"></button>
+      <button class="bg-blue-500 motion-delay-150"></button>
+      <button class="bg-green-500 motion-delay-300"></button>
+      <button class="bg-yellow-500 motion-delay-500"></button>
     </main>
 
     <footer
-      class="flex flex-col gap-y-8 text-2xl font-extrabold [&>p]:text-center"
+      class="flex flex-col gap-y-4 text-2xl font-extrabold lg:gap-y-8 [&>p]:text-center"
     >
       <p>Score: <span id="score">0</span></p>
       <p class="invisible uppercase text-red-400" id="game-over">Game over</p>
