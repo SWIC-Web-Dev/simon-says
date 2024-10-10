@@ -1,7 +1,6 @@
-import { gameButtons, INITIAL_GAME_DELAY, lightButtons } from "./lib";
-
-const sequence = [...gameButtons];
+import { INITIAL_GAME_DELAY, lightButtons } from "./lib";
 
 setTimeout(() => {
-  lightButtons(sequence);
+  // Pass in an initial sequence or nothing to start a new game.
+  lightButtons();
 }, INITIAL_GAME_DELAY);

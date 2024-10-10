@@ -44,7 +44,7 @@ export function lightAButton(button) {
   }, BUTTON_LIT_TIME);
 }
 
-export function lightButtons(sequence) {
+export function lightButtons(sequence = []) {
   disableButtons();
 
   sequence.forEach((button, index) => {
