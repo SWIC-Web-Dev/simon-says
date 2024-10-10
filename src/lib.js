@@ -18,6 +18,7 @@ function playGameOverSound() {
 }
 
 export const gameButtons = document.querySelectorAll("main button");
+export const gameOverButton = document.querySelector("footer button");
 export const gameOverP = document.querySelector("#game-over");
 export const scoreSpan = document.querySelector("#score");
 
