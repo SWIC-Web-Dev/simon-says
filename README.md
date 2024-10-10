@@ -1,4 +1,4 @@
-# Simon Says
+# Simon Game
 
 ## Uses
 
