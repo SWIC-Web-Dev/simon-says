@@ -30,6 +30,12 @@ export function activateButtons(sequence) {
   });
 }
 
+export function disableButtons() {
+  gameButtons.forEach((button) => {
+    button.disabled = true;
+  });
+}
+
 export function lightAButton(button) {
   button.classList.add("lit");
 
@@ -39,7 +45,7 @@ export function lightAButton(button) {
 }
 
 export function lightButtons(sequence) {
-  removeButtonListeners();
+  disableButtons();
 
   sequence.forEach((button, index) => {
     setTimeout(() => {
@@ -75,7 +81,7 @@ export function pressButton(event, sequence) {
     }, BUTTON_LIT_TIME);
   } else {
     gameOverP.classList.remove("invisible");
-    removeButtonListeners();
+    disableButtons();
   }
 
   // If the player has pressed all the buttons in the sequence,  move on...
@@ -86,10 +92,4 @@ export function pressButton(event, sequence) {
       lightButtons(sequence);
     }, BUTTON_LIT_INTERVAL);
   }
-}
-
-export function removeButtonListeners() {
-  gameButtons.forEach((button) => {
-    button.disabled = true;
-  });
 }
