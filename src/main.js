@@ -1,6 +1,8 @@
-import { INITIAL_GAME_DELAY, lightButtons } from "./lib";
+import { createSimonGame } from "./lib";
+
+const INITIAL_GAME_DELAY = 1500;
 
 setTimeout(() => {
-  // Pass in an initial sequence or nothing to start a new game.
-  lightButtons();
+  const simonGame = createSimonGame();
+  simonGame.lightButtons();
 }, INITIAL_GAME_DELAY);
